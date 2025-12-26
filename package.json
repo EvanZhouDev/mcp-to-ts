@@ -1,0 +1,38 @@
+{
+	"name": "mcp-to-ts",
+	"version": "1.0.0",
+	"description": "A TypeScript interface for MCP Tools",
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"sideEffects": false,
+	"scripts": {
+		"build": "tsup src/index.ts --format esm --dts --outDir dist --clean",
+		"prepublishOnly": "npm run build",
+		"test": "vitest run",
+		"test:watch": "vitest --watch"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"dependencies": {
+		"@ai-sdk/mcp": "1.0.1",
+		"ai": "6.0.0-beta.138",
+		"ajv": "^6.12.6"
+	},
+	"devDependencies": {
+		"typescript": "latest",
+		"vitest": "latest"
+	}
+}
