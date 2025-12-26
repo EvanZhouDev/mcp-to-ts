@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"target": "es2022",
+		"target": "es2020",
 		"module": "ESNext",
 		"moduleResolution": "Node",
 		"declaration": true,
@@ -12,7 +12,7 @@
 		"resolveJsonModule": true,
 		"outDir": "dist",
 		"rootDir": "src",
-		"lib": ["ES2022", "DOM"]
+		"lib": ["ES2020", "DOM"]
 	},
 	"include": ["src"],
 	"exclude": ["dist", "node_modules"]

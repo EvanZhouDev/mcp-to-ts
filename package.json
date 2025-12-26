@@ -33,6 +33,7 @@
 	},
 	"devDependencies": {
 		"typescript": "latest",
-		"vitest": "latest"
+		"vitest": "latest",
+		"tsup": "^8.5.1"
 	}
 }
